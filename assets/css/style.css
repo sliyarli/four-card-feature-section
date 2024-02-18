@@ -1,0 +1,116 @@
+* {
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fafafa !important;
+  overflow-x: hidden !important;
+}
+
+.row {
+  margin: auto 0 !important;
+}
+
+:root {
+  /* Primary Colors */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* Neutral Colors */
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+.welcome-part h2 {
+  color: var(--very-dark-blue);
+}
+
+.welcome-part h3 {
+  color: #4e4f61;
+}
+
+.welcome-part p {
+  color: var(--grayish-blue);
+}
+
+/* MAIN */
+
+.card-item {
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  border-top: 5px solid;
+}
+
+.card-heading {
+  color: var(--very-dark-blue);
+}
+
+.card-text {
+  font-size: 12px;
+  color: var(--grayish-blue);
+}
+
+.card-image {
+  width: 20%;
+}
+
+.supervisor-card {
+  border-top-color: var(--cyan);
+}
+
+.team-builder-card {
+  border-top-color: var(--red);
+}
+
+.karma-card {
+  border-color: var(--orange);
+}
+
+.calculator-card {
+  border-top-color: var(--blue);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .calculator-card-container {
+    margin-top: -202px !important;
+  }
+  .team-builder-card {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .team-builder-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-item {
+    margin-bottom: 20px;
+  }
+
+  .welcome-part br {
+    display: none;
+  }
+
+  .welcome-part p {
+    width: 73%;
+  }
+}
